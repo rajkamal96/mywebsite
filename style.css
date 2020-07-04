@@ -53,7 +53,6 @@
         height: 100%;
       }
       .swiper-slide {
-        
         font-size: 18px;
         background: #333;
   
@@ -225,6 +224,7 @@
     }
     /*Grid*/
     .card{
+        
         position: relative;
         margin-right: 12px;
         border: none !important;
@@ -302,8 +302,8 @@
         background-image: url('images/gym2.png');
         background-size: cover;
     }
-    #travel{
-        background-image: url('images/travelblog2.png');
+    #tetris{
+        background-image: url('images/tetrisgame2.png');
         background-size: cover;
     }
     #ecommercebackend{

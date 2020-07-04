@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rajkamal</title>
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     
     <!--Bootstrap CDN-->
@@ -48,6 +48,7 @@
                     <button class="btn active" data-filter="*">SHOW ALL</button>
                     <button class="btn" data-filter="html5">HTML5</button>
                     <button class="btn" data-filter="bootstrap">BOOTSTRAP</button>
+                    <button class="btn" data-filter="javascript">JAVASCRIPT</button>
                     <button class="btn" data-filter="reactjs">REACTJS</button>
                     <button class="btn" data-filter="nodejs">NODEJS</button>
                     <button class="btn" data-filter="php">PHP</button>
@@ -212,19 +213,19 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 mb-4 item html5">
+                        <div class="col-md-6 mb-4 item html5 javascript">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h4 class="title">TRAVEL BLOG SITE</h4>
+                                    <h4 class="title">TETRIS GAME</h4>
                                 </div>
                                 <div class="card-head">
-                                    <a href="https://rajkamal96.github.io/travel/"><img src="images/travelblog.png" alt="project" class="img-fluid card-img">
+                                    <a href="https://myawesometetris.netlify.app/"><img src="images/tetrisgame.gif" alt="project" class="img-fluid card-img">
                                     <div class="card-overlay">   
                                     </div>
-                                    <div class="card-hover" id="travel">
-                                        <a href="https://rajkamal96.github.io/travel/"><button class="btn">CLICK ME</button></a>
-                                        <a href="https://rajkamal96.github.io/travel/"><button class="btn">HTML5</button></a>
-                                        <a href="https://rajkamal96.github.io/travel/"><button class="btn">BOOTSTRAP</button></a>
+                                    <div class="card-hover" id="tetris">
+                                        <a href="https://myawesometetris.netlify.app/"><button class="btn">PLAY</button></a>
+                                        <a href="https://myawesometetris.netlify.app/"><button class="btn">HTML5</button></a>
+                                        <a href="https://myawesometetris.netlify.app/"><button class="btn">JAVASCRIPT</button></a>
                                     </div></a>
                                 </div>
                                 
@@ -371,7 +372,7 @@
                 </div>
             </div>
         
-        </div>
+          </div>
           <div class="swiper-slide" style="background-image:url()">
             <div class="contact-container">
                 <div class="header">
@@ -419,7 +420,7 @@
                     </div>
                 </div>
             </div>
-        </div>  
+          </div>
         </div>
         <!-- Add Pagination -->
         <!--<div class="swiper-pagination"></div>-->
@@ -429,7 +430,7 @@
     </div>
     
       <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
       <!-- Initialize Swiper -->
       <script>
@@ -449,6 +450,8 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             },
+            observer: true,  
+            observeParents: true,
         });
         //Animated text
         new TypeIt(".multipleStrings", {
